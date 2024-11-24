@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <div class="header">
+        <header class="container">
+            <div class="row justify-content=space-between align-items-center">
+                <div class="logo-side col-xl-2 col-lg-2 col-md-6 col-sm-7 col-xs-9">
+                    <img class="logo" src="https://s3-alpha-sig.figma.com/img/5e85/ba7e/2220b03c0726ae6807b6de824e538e46?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pGxozNRGYhb3t3Ycm508DYYLqXX5IQMD0hUtKBi2nfQHAuOjD0gK6eJrp8kkZs5B8Pi5NJCD1r5BsV79F-f9t2sG0fUIxeSrZFXATAoxPekJx0bApfSt2ZAvbJG9GRazenNzwQ9nBvLXNO6C3uLXZHInnuACgYGYHcsN15d0M0G2Td3BQotQHoymMSAXmopG-ozD2oY4Mg41N8rmQS3oxQdzloBJ92tTXkYu2bApHY71PWZIeHv3SQPL96fwjT~oopuOjSFcpRCIZ3xjzrDjLgsoLP~r036Mg9yBjXcxXouZBPWlUSsDaWFjep3YPRfhj4ZgNh0gOlF9zFaxeuDQ~g__" alt="logo">
+                </div>
+                <div class="list-side col-8">
+                    <div>
+                        <ul>
+                            <li><a class="start-link" href="#">БАНК</a></li>
+                            <li><a href="#">БИЗНЕС</a></li>
+                            <li><a href="#">ИНВЕСТИЦИИ</a></li>
+                            <li><a href="#">СТРАХОВАНИЕ</a></li>
+                            <li><a href="#">МОБАЙЛ</a></li>
+                            <li><a href="#">ПУТЕШЕСТВИЯ</a></li>
+                            <li><a href="#">РАЗВЛЕЧЕНИЯ</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="button-side col-2">
+                    <button class="login-btn">ВОЙТИ</button>
+                </div>
+            </div>
+        </header>
+    </div>
+    <main class="container">
+
+        <div class="row">
+            <div class="changes-container">
+                <div class="content">
+                    <h1 class="col-12">Конвертер валют онлайн</h1>
+                    <div class="insert-container col-4">
+                        <p class="text">У меня есть</p>
+                        <div class="insert-buttons-container">
+                            <div class="insert-buttons active-insert" id="insert_rub">RUB</div>
+                            <div class="insert-buttons" id="insert_usd">USD</div>
+                            <div class="insert-buttons" id="insert_eur">EUR</div>
+                            <div class="insert-buttons" id="insert_gbp">GBP</div>
+                        </div>
+                        <div class="insert-pay">
+                            <input class="insert-input" type="number" value="0">
+                            <p class="notification-insert">1 RUB = 0.009787 USD</p>
+                        </div>
+                    </div>
+                    <div class="out-container col-4 col_14">
+                        <p class="text">Хочу приобрести</p>
+                        <div class="out-buttons-container">
+                            <div class="out-buttons" id="out_rub">RUB</div>
+                            <div class="out-buttons active-out" id="out_usd">USD</div>
+                            <div class="out-buttons" id="out_eur">EUR</div>
+                            <div class="out-buttons" id="out_gbp">GBP</div>
+                        </div>
+                        <div class="out-pay">
+                            <input type="number" class="out-input" value="0">
+                            <p class="notification-out">1 USD = 100.9474 RUB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+    <h1 id="errorr" align = "center"></h1>
+    <script src="app.js"></script>
+</body>
+
+</html>
